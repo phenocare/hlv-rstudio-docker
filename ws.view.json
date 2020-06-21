@@ -1,0 +1,1041 @@
+{
+  "version": "2.116.1",
+  "grid": {
+    "xWidth": 10,
+    "yHeight": 10,
+    "layers": {
+      "Default layer": {
+        "name": "Default layer"
+      }
+    }
+  },
+  "modules": [
+    {
+      "url": "modules/types/science/spectra/spectra_displayer/",
+      "id": 6,
+      "title": "spectra displayer",
+      "configuration": {
+        "sections": {
+          "graph": [
+            {
+              "sections": {},
+              "groups": {
+                "graph": [
+                  {
+                    "url": [
+                      ""
+                    ],
+                    "zoom": [
+                      "xy"
+                    ],
+                    "wheelAction": [
+                      "zoomY"
+                    ],
+                    "wheelbaseline": [
+                      0
+                    ],
+                    "fullOut": [
+                      "both"
+                    ],
+                    "legend": [
+                      "top"
+                    ],
+                    "legendOptions": [
+                      [
+                        "isSerieHideable",
+                        "isSerieSelectable"
+                      ]
+                    ],
+                    "mouseTracking": [
+                      []
+                    ],
+                    "trackingAxis": [
+                      ""
+                    ],
+                    "selectScatter": [
+                      [
+                        "yes"
+                      ]
+                    ],
+                    "independantYZoom": [
+                      [
+                        "yes"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "axis": [
+            {
+              "sections": {},
+              "groups": {
+                "xAxis": [
+                  {
+                    "checkboxes": [
+                      [
+                        "display"
+                      ]
+                    ],
+                    "label": [
+                      "intensity"
+                    ],
+                    "beforeSpacing": [
+                      "0"
+                    ],
+                    "afterSpacing": [
+                      0
+                    ],
+                    "min": [
+                      ""
+                    ],
+                    "max": [
+                      ""
+                    ],
+                    "nbTicksPrimary": [
+                      5
+                    ],
+                    "axismodification": [
+                      "none"
+                    ]
+                  }
+                ],
+                "yAxis": [
+                  {
+                    "checkboxes": [
+                      [
+                        "display"
+                      ]
+                    ],
+                    "label": [
+                      "time"
+                    ],
+                    "beforeSpacing": [
+                      "0"
+                    ],
+                    "afterSpacing": [
+                      0
+                    ],
+                    "min": [
+                      ""
+                    ],
+                    "max": [
+                      ""
+                    ],
+                    "nbTicksPrimary": [
+                      5
+                    ],
+                    "fitToAxisOnFromTo": [
+                      []
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "series": [
+            {
+              "sections": {},
+              "groups": {
+                "series": [
+                  {
+                    "overflow": [
+                      []
+                    ],
+                    "stackVerticalSpacing": [
+                      1
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "variables": [
+            {
+              "sections": {},
+              "groups": {
+                "variables": [
+                  [
+                    {
+                      "variable": "",
+                      "axis": "0",
+                      "adaptTo": "none",
+                      "plotcolor": [
+                        1,
+                        1,
+                        255,
+                        1
+                      ],
+                      "strokewidth": "1",
+                      "strokestyle": "1",
+                      "plotcontinuous": "continuous",
+                      "peakpicking": [],
+                      "markers": [],
+                      "markerShape": "1",
+                      "markerSize": 2,
+                      "normalize": "none",
+                      "optimizeSlots": [],
+                      "tracking": []
+                    }
+                  ]
+                ]
+              }
+            }
+          ],
+          "misc": [
+            {
+              "sections": {},
+              "groups": {
+                "misc": [
+                  {
+                    "highlightOptions": [
+                      "{}"
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "groups": {}
+      },
+      "layers": {
+        "Default layer": {
+          "zIndex": 0,
+          "display": true,
+          "title": "spectra displayer",
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer",
+          "position": {
+            "left": 1,
+            "top": 7
+          },
+          "size": {
+            "width": 68,
+            "height": 66
+          },
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ]
+        }
+      },
+      "vars_in": [
+        {
+          "rel": "chart",
+          "name": "scores"
+        }
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {
+          "event": "onSelectScatter",
+          "rel": "selectedData",
+          "jpath": [],
+          "name": "selectedScores"
+        }
+      ],
+      "actions_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "toolbar": {
+        "custom": [
+          [
+            {
+              "title": "",
+              "icon": "",
+              "action": "",
+              "position": "begin",
+              "color": [
+                100,
+                100,
+                100,
+                1
+              ]
+            }
+          ]
+        ],
+        "common": [
+          {
+            "toolbar": [
+              [
+                "Open Preferences",
+                "Show fullscreen",
+                "Export Data",
+                "Print"
+              ]
+            ]
+          }
+        ]
+      },
+      "css": [
+        {
+          "fontSize": [
+            ""
+          ],
+          "fontFamily": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "url": "modules/types/client_interaction/code_executor/",
+      "id": 10,
+      "title": "",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "display": [
+                [
+                  "editor",
+                  "buttons"
+                ]
+              ],
+              "execOnLoad": [
+                []
+              ],
+              "asyncAwait": [
+                [
+                  "top"
+                ]
+              ],
+              "script": [
+                "\nlet socket = new WebSocket(\"ws://127.0.0.1:8888/\");\n\nsocket.onopen = function(e) {\n  socket.send(JSON.stringify({a : 2}));\n};\n\nsocket.onmessage = function(event) {\n    API.doAction(\"FromR\", event);\n};\n\nAPI.cache('socket', socket);\nconsole.log(socket);\n"
+              ]
+            }
+          ],
+          "libs": [
+            [
+              {}
+            ]
+          ],
+          "buttons": [
+            [
+              {
+                "name": "button1",
+                "label": "Execute",
+                "hide": [],
+                "disable": []
+              }
+            ]
+          ]
+        }
+      },
+      "layers": {
+        "Default layer": {
+          "zIndex": 0,
+          "display": true,
+          "title": "",
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer",
+          "position": {
+            "left": 89,
+            "top": 8
+          },
+          "size": {
+            "width": 44,
+            "height": 24
+          },
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ]
+        }
+      },
+      "vars_in": [
+        {}
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "actions_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "toolbar": {
+        "custom": [
+          [
+            {
+              "title": "",
+              "icon": "",
+              "action": "",
+              "position": "begin",
+              "color": [
+                100,
+                100,
+                100,
+                1
+              ]
+            }
+          ]
+        ],
+        "common": [
+          {
+            "toolbar": [
+              [
+                "Open Preferences"
+              ]
+            ]
+          }
+        ]
+      },
+      "css": [
+        {
+          "fontSize": [
+            ""
+          ],
+          "fontFamily": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "url": "modules/types/client_interaction/code_executor/",
+      "id": 11,
+      "title": "",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "display": [
+                [
+                  "editor",
+                  "buttons"
+                ]
+              ],
+              "execOnLoad": [
+                []
+              ],
+              "asyncAwait": [
+                [
+                  "top"
+                ]
+              ],
+              "script": [
+                "\nlet message = this.action;\nconsole.log('mess: ' + message.value.data)"
+              ]
+            }
+          ],
+          "libs": [
+            [
+              {}
+            ]
+          ],
+          "buttons": [
+            [
+              {
+                "name": "button1",
+                "label": "Execute",
+                "hide": [],
+                "disable": []
+              }
+            ]
+          ]
+        }
+      },
+      "layers": {
+        "Default layer": {
+          "zIndex": 0,
+          "display": true,
+          "title": "",
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer",
+          "position": {
+            "left": 22,
+            "top": 80
+          },
+          "size": {
+            "width": 41,
+            "height": 12
+          },
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ]
+        }
+      },
+      "vars_in": [
+        {}
+      ],
+      "actions_in": [
+        {
+          "rel": "execute",
+          "name": "FromR"
+        }
+      ],
+      "vars_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "actions_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "toolbar": {
+        "custom": [
+          [
+            {
+              "title": "",
+              "icon": "",
+              "action": "",
+              "position": "begin",
+              "color": [
+                100,
+                100,
+                100,
+                1
+              ]
+            }
+          ]
+        ],
+        "common": [
+          {
+            "toolbar": [
+              [
+                "Open Preferences"
+              ]
+            ]
+          }
+        ]
+      },
+      "css": [
+        {
+          "fontSize": [
+            ""
+          ],
+          "fontFamily": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "url": "modules/types/client_interaction/code_executor/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "display": [
+                [
+                  "editor",
+                  "buttons"
+                ]
+              ],
+              "execOnLoad": [
+                []
+              ],
+              "asyncAwait": [
+                [
+                  "top"
+                ]
+              ],
+              "script": [
+                "let score = ({\"title\": \"score plot\",\n    \"data\": [{\n        \"type\": \"scatter\",\n        \"info\":[1,2,3,4,5],\n        \"x\":[1, 2, 3, 4, 6],\n        \"y\":[2, 3, 6, 3, 5],\n        \"styles\": {\n            \"unselected\": [\n                {\"fill\": \"transparent\",\n                \"shape\": \"circle\",\n                \"cx\": 0,\n                \"cy\": 0,\n                \"r\": 15,\n                \"height\": \"5px\",\n                \"width\": \"5px\",\n                \"stroke\": \"red\"},\n                {\"fill\": \"transparent\",\n                \"shape\": \"circle\",\n                \"cx\": 0,\n                \"cy\": 0,\n                \"r\": 15,\n                \"height\": \"5px\",\n                \"width\": \"5px\",\n                \"stroke\": \"red\"}],\n            \"selected\": [\n                {\"fill\": \"transparent\",\n                \"shape\": \"circle\",\n                \"cx\": 0,\n                \"cy\": 0,\n                \"r\": 5,\n                \"height\": \"5px\",\n                \"width\": \"5px\",\n                \"stroke\": \"red\"}]\n            }\n        }]\n})\n\n//API.createData('currentChart', currentChart)\nAPI.createData('scores', score)\n\nconsole.log(score);"
+              ]
+            }
+          ],
+          "libs": [
+            [
+              {}
+            ]
+          ],
+          "buttons": [
+            [
+              {
+                "name": "button1",
+                "label": "Execute",
+                "hide": [],
+                "disable": []
+              }
+            ]
+          ]
+        }
+      },
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 89,
+            "top": 33
+          },
+          "size": {
+            "width": 44,
+            "height": 41
+          },
+          "zIndex": 0,
+          "display": true,
+          "title": "",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "id": 12,
+      "vars_in": [
+        {}
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "actions_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "toolbar": {
+        "custom": [
+          [
+            {
+              "title": "",
+              "icon": "",
+              "action": "",
+              "position": "begin",
+              "color": [
+                100,
+                100,
+                100,
+                1
+              ]
+            }
+          ]
+        ],
+        "common": [
+          {
+            "toolbar": [
+              [
+                "Open Preferences"
+              ]
+            ]
+          }
+        ]
+      },
+      "css": [
+        {
+          "fontSize": [
+            ""
+          ],
+          "fontFamily": [
+            ""
+          ]
+        }
+      ],
+      "title": ""
+    },
+    {
+      "url": "modules/types/client_interaction/code_executor/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "display": [
+                [
+                  "editor",
+                  "buttons"
+                ]
+              ],
+              "execOnLoad": [
+                []
+              ],
+              "asyncAwait": [
+                [
+                  "top"
+                ]
+              ],
+              "script": [
+                "\nlet selectedScores = API.getData('selectedScores').resurrect();\nlet socket = API.cache('socket');\nsocket.send(JSON.stringify(selectedScores))\n\nconsole.log(selectedScores)\n\n"
+              ]
+            }
+          ],
+          "libs": [
+            [
+              {}
+            ]
+          ],
+          "buttons": [
+            [
+              {
+                "name": "button1",
+                "label": "Execute",
+                "hide": [],
+                "disable": []
+              }
+            ]
+          ]
+        }
+      },
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 89,
+            "top": 75
+          },
+          "size": {
+            "width": 44,
+            "height": 18
+          },
+          "zIndex": 0,
+          "display": true,
+          "title": "",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "id": 14,
+      "vars_in": [
+        {
+          "rel": "inputValue",
+          "name": "selectedScores"
+        }
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "actions_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "toolbar": {
+        "custom": [
+          [
+            {
+              "title": "",
+              "icon": "",
+              "action": "",
+              "position": "begin",
+              "color": [
+                100,
+                100,
+                100,
+                1
+              ]
+            }
+          ]
+        ],
+        "common": [
+          {
+            "toolbar": [
+              [
+                "Open Preferences"
+              ]
+            ]
+          }
+        ]
+      },
+      "css": [
+        {
+          "fontSize": [
+            ""
+          ],
+          "fontFamily": [
+            ""
+          ]
+        }
+      ],
+      "title": ""
+    },
+    {
+      "url": "modules/types/client_interaction/code_executor/",
+      "configuration": {
+        "sections": {},
+        "groups": {
+          "group": [
+            {
+              "display": [
+                [
+                  "editor",
+                  "buttons"
+                ]
+              ],
+              "execOnLoad": [
+                []
+              ],
+              "asyncAwait": [
+                [
+                  "top"
+                ]
+              ],
+              "script": [
+                "require(['modules/modulefactory'], function (ModuleFactory) {\n    function getSpectraDisplayers() {\n        var modules = ModuleFactory.getModules();\n        let output = modules\n            .filter(x => DataObject.resurrect(x.definition.url)\n            .match(/spectra_displayer/g));\n        let result = []\n        for (let i = 0; i < output.length; i++) {\n            result.push({\n                'module': output[i],\n                'id': output[i].definition.id\n            })\n        }\n        return result\n    }\n    let data = getSpectraDisplayers();\n    console.log(data)\n})\n\n let module = API.getModule(6);\n module.view.xAxis.label.firstElementChild.innerHTML = \"test\";\n console.log()"
+              ]
+            }
+          ],
+          "libs": [
+            [
+              {}
+            ]
+          ],
+          "buttons": [
+            [
+              {
+                "name": "button1",
+                "label": "Execute",
+                "hide": [],
+                "disable": []
+              }
+            ]
+          ]
+        }
+      },
+      "layers": {
+        "Default layer": {
+          "position": {
+            "left": 87,
+            "top": 99
+          },
+          "size": {
+            "width": 52,
+            "height": 27
+          },
+          "zIndex": 0,
+          "display": true,
+          "title": "",
+          "bgColor": [
+            255,
+            255,
+            255,
+            0
+          ],
+          "wrapper": true,
+          "created": true,
+          "name": "Default layer"
+        }
+      },
+      "id": 15,
+      "vars_in": [
+        {}
+      ],
+      "actions_in": [
+        {}
+      ],
+      "vars_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "actions_out": [
+        {
+          "jpath": []
+        }
+      ],
+      "toolbar": {
+        "custom": [
+          [
+            {
+              "title": "",
+              "icon": "",
+              "action": "",
+              "position": "begin",
+              "color": [
+                100,
+                100,
+                100,
+                1
+              ]
+            }
+          ]
+        ],
+        "common": [
+          {
+            "toolbar": [
+              [
+                "Open Preferences"
+              ]
+            ]
+          }
+        ]
+      },
+      "css": [
+        {
+          "fontSize": [
+            ""
+          ],
+          "fontFamily": [
+            ""
+          ]
+        }
+      ],
+      "title": ""
+    }
+  ],
+  "variables": [
+    {
+      "varname": "chart",
+      "jpath": [
+        "chart"
+      ]
+    },
+    {
+      "varname": "simpleArray",
+      "jpath": [
+        "simpleArray"
+      ]
+    },
+    {
+      "varname": "multiChart",
+      "jpath": [
+        "multiChart"
+      ]
+    },
+    {
+      "varname": "simpleArray2",
+      "jpath": [
+        "simpleArray2"
+      ]
+    }
+  ],
+  "aliases": [
+    {}
+  ],
+  "configuration": {
+    "title": "visualizeR"
+  },
+  "actionscripts": [
+    {
+      "sections": {},
+      "groups": {
+        "action": [
+          {
+            "name": [
+              null
+            ],
+            "script": [
+              null
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "init_script": [
+    {
+      "sections": {},
+      "groups": {
+        "general": [
+          {
+            "script": [
+              null
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "custom_filters": [
+    {
+      "sections": {
+        "modules": [
+          {
+            "sections": {},
+            "groups": {
+              "modules": [
+                [
+                  {}
+                ]
+              ]
+            }
+          }
+        ],
+        "filtersLib": [
+          {
+            "sections": {},
+            "groups": {
+              "filters": [
+                [
+                  {}
+                ]
+              ]
+            }
+          }
+        ],
+        "filters": [
+          {
+            "sections": {},
+            "groups": {
+              "filter": [
+                {
+                  "name": [
+                    null
+                  ],
+                  "script": [
+                    null
+                  ]
+                }
+              ],
+              "libs": [
+                [
+                  {}
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "groups": {}
+    }
+  ],
+  "actionfiles": [
+    {
+      "sections": {},
+      "groups": {
+        "action": [
+          [
+            {}
+          ]
+        ]
+      }
+    }
+  ]
+}
+

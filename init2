@@ -1,0 +1,4 @@
+#! /bin/bash
+
+
+. /root/.nvm/nvm.sh node src/server.js --proxyTarget=file:///usr/local/lib/R/site-library/hastaLaVista/visu/ --port=5474 --noBabel &

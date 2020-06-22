@@ -1,8 +1,5 @@
 FROM rocker/rstudio:latest
 
-COPY install.R /home/rstudio/install.R
-COPY init2 /init2
-
 RUN apt-get install -y curl \
 libxtst6 \
 libgit2-dev \
@@ -29,10 +26,15 @@ RUN . /root/.nvm/nvm.sh \
   && npm i 
 
 # install R pacakges
+COPY install.R /home/rstudio/install.R
 RUN R -e "source('/home/rstudio/install.R')" \
   && cd /usr/local/lib/R/site-library/hastaLaVista/visu/data \
   && mkdir json \
   && chmod 775 json
 
-CMD ["/init2"]
+COPY init2 /init2
+RUN chmod u+x /init2 \
+  && cat /init2 >> /etc/cont-init.d/userconf 
+
+#CMD ["/init2"]
 EXPOSE 5474 8787

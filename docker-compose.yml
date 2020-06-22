@@ -7,8 +7,8 @@ services:
       - '127.0.0.1:5474:5474'
     volumes:
       - /data/git:/home/rstudio/ 
-    environment:
-      - "PASSWORD=20darmn20"
+    env_file:
+      - .env
     restart: always
 
 

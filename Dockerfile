@@ -32,9 +32,8 @@ RUN R -e "source('/home/rstudio/install.R')" \
   && mkdir json \
   && chmod 775 json
 
-COPY init2 /init2
-RUN chmod u+x /init2 \
-  && cat /init2 >> /etc/cont-init.d/userconf 
+RUN mkdir /etc/services.d/babel
+COPY ./babel /etc/services.d/babel
 
 #CMD ["/init2"]
 EXPOSE 5474 8787

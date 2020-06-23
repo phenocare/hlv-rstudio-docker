@@ -10,5 +10,6 @@ docker pull phenocare/hastalavista
 ```
 
 A blog with some hastaLaVista tutorial can be found here: https://jwist.github.io/hastaLaVista/
+A blog with more information about MetaboMate can be found here: https://tkimhofer.github.io/MetaboMate/
 
 If you find it useful, please cite this work [![DOI](https://zenodo.org/badge/DOI/10.1186/s13321-019-0399-7.svg)](https://doi.org/10.1186/s13321-019-0399-7)

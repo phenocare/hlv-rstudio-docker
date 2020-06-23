@@ -9,4 +9,6 @@ You can use this Dockerfile to build and modify our own container, otherwise you
 docker pull phenocare/hastalavista
 ```
 
+A blog with some hastaLaVista tutorial can be found here: https://jwist.github.io/hastaLaVista/
+
 If you find it useful, please cite this work [![DOI](https://zenodo.org/badge/DOI/10.1186/s13321-019-0399-7.svg)](https://doi.org/10.1186/s13321-019-0399-7)

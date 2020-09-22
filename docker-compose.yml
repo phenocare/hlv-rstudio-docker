@@ -5,8 +5,10 @@ services:
     ports:
       - '127.0.0.1:8787:8787'
       - '127.0.0.1:5474:5474'
+      - '127.0.0.1:8888:8888'
     volumes:
       - /data/git:/home/rstudio/ 
+      - /data/imports/ivdr04:/home/rstudio/data/imports/ivdr04/ 
     env_file:
       - .env
     restart: always

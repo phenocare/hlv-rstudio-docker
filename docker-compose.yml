@@ -8,7 +8,10 @@ services:
       - '127.0.0.1:8888:8888'
     volumes:
       - /data/git:/home/rstudio/ 
-      - /data/imports/ivdr04:/home/rstudio/data/imports/ivdr04/ 
+      - /ivdr02:/home/rstudio/data/imports/ivdr02/ 
+      - /ivdr03:/home/rstudio/data/imports/ivdr03/ 
+      - /ivdr04:/home/rstudio/data/imports/ivdr04/ 
+      - /ivdr05:/home/rstudio/data/imports/ivdr05/ 
     env_file:
       - .env
     restart: always

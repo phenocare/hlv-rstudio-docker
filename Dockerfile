@@ -1,7 +1,6 @@
 FROM rocker/rstudio:latest
 
-RUN apt-get install -y curl \
-libxtst6 \
+RUN apt-get update && apt-get install -y curl \
 libgit2-dev \
 libxml2-dev \
 libgsl0-dev \

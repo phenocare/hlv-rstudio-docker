@@ -7,13 +7,11 @@ services:
       - '127.0.0.1:5474:5474'
       - '127.0.0.1:8888:8888'
     volumes:
-      - /data/git:/home/rstudio/ 
-      - /IVDR02:/home/rstudio/data/imports/ivdr02/ 
-      - /IVDR03:/home/rstudio/data/imports/ivdr03/ 
-      - /IVDR04:/home/rstudio/data/imports/ivdr04/ 
-      - /IVDR05:/home/rstudio/data/imports/ivdr05/ 
-      - /data/sftp:/home/rstudio/data/imports/sftp/ 
-      - /var/www/html/data:/home/rstudio/data/exports/ 
+      - /nmr:/home/rstudio/nmr/
+      - /data/git:/home/rstudio/git/ 
+      - /data/gitea-repos:/home/rstudio/gitea/ 
+      - /var/www/html/data:/home/rstudio/exports/ 
+      - /home/centos/.ssh/:/home/rstudio/.ssh
     env_file:
       - .env
     restart: always

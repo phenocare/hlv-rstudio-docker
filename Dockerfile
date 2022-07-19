@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y curl \
 libgit2-dev \
 libxml2-dev \
 libgsl0-dev \
+git-lfs \
   && mkdir git \
   && cd git \
   && wget https://www.lactame.com/visualizer/latest.tar.gz \
